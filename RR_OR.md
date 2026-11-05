@@ -29,9 +29,9 @@ O estudo fictício selecionou **80 casos** (com a doença) e **80 controles** (s
 
 Para uma tabela 2 × 2, com `a` = expostos doentes, `b` = expostos não doentes, `c` = não expostos doentes e `d` = não expostos não doentes:
 
-\[
+$$
 OR=\frac{a\times d}{b\times c}=\frac{52\times52}{28\times28}=\mathbf{3{,}45}
-\]
+$$
 
 - **IC95% aproximado do OR:** **1,80 a 6,60**.
 - **Interpretação:** indivíduos com tabagismo prévio apresentam aproximadamente **3,45 vezes as odds** de doença, quando comparados aos não expostos.
@@ -50,9 +50,9 @@ O estudo fictício selecionou **80 casos** e **80 controles**. Use `consumo_regu
 | Não | 46 | 40 |
 | **Total** | **80** | **80** |
 
-\[
+$$
 OR=\frac{34\times40}{40\times46}=\mathbf{0{,}74}
-\]
+$$
 
 - **IC95% aproximado do OR:** **0,40 a 1,38**.
 - **Interpretação:** o OR sugere odds aproximadamente **26% menores** de doença entre consumidores regulares de fibras.
@@ -73,15 +73,15 @@ A coorte fictícia acompanhou **200 adultos**, todos **sem hipertensão no iníc
 
 **Incidência acumulada em 12 meses:**
 
-\[
+$$
 I_E=\frac{30}{100}=30\% \qquad I_{NE}=\frac{12}{100}=12\%
-\]
+$$
 
 **Risco Relativo:**
 
-\[
+$$
 RR=\frac{I_E}{I_{NE}}=\frac{0{,}30}{0{,}12}=\mathbf{2{,}50}
-\]
+$$
 
 - **IC95% aproximado do RR:** **1,36 a 4,60**.
 - **Diferença absoluta de riscos:** 30% − 12% = **18 pontos percentuais**.
@@ -102,15 +102,15 @@ Outra coorte fictícia acompanhou **200 adultos sem hipertensão inicial**, dura
 
 **Incidência acumulada em 12 meses:**
 
-\[
+$$
 I_E=\frac{12}{100}=12\% \qquad I_{NE}=\frac{32}{100}=32\%
-\]
+$$
 
 **Risco Relativo:**
 
-\[
+$$
 RR=\frac{0{,}12}{0{,}32}=\mathbf{0{,}375}
-\]
+$$
 
 - **IC95% aproximado do RR:** **0,205 a 0,685**.
 - **Redução relativa de risco observada:** (1 − 0,375) × 100 = **62,5%**.
@@ -135,15 +135,15 @@ Os valores apresentados são intervalos **aproximados de Wald, calculados na esc
 
 Para **OR**:
 
-\[
+$$
 IC95\%(OR)=\exp\left[\ln(OR)\pm1{,}96\sqrt{\frac1a+\frac1b+\frac1c+\frac1d}\right]
-\]
+$$
 
 Para **RR**, com `a` e `b` no grupo exposto e `c` e `d` no não exposto (método logarítmico de Katz):
 
-\[
+$$
 IC95\%(RR)=\exp\left[\ln(RR)\pm1{,}96\sqrt{\frac1a-\frac1{a+b}+\frac1c-\frac1{c+d}}\right]
-\]
+$$
 
 Em ambos os casos, o valor **1** representa ausência de associação na escala relativa. Se um IC95% bilateral incluir 1, não se rejeita a hipótese de associação nula em um teste correspondente ao nível de 5%.
 
