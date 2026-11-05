@@ -133,16 +133,16 @@ $$
 
 Os valores apresentados são intervalos **aproximados de Wald, calculados na escala logarítmica**, com `z = 1,96`. Dependendo do software, da configuração de continuidade ou do método de intervalo de confiança empregado, podem ocorrer pequenas diferenças.
 
-Para **OR**:
+Para **OR**, o intervalo de confiança de 95% é:
 
 $$
-\mathrm{IC}_{95\%}(\mathrm{OR}) = \exp\left(\log(\mathrm{OR}) \pm 1.96\sqrt{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}}\right)
+\mathrm{IC}_{95}(\mathrm{OR}) = \exp\left(\log(\mathrm{OR}) \pm 1.96\sqrt{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}}\right)
 $$
 
-Para **RR**, com `a` e `b` no grupo exposto e `c` e `d` no não exposto (método logarítmico de Katz):
+Para **RR**, o intervalo de confiança de 95%, com `a` e `b` no grupo exposto e `c` e `d` no não exposto, é dado pelo método logarítmico de Katz:
 
 $$
-\mathrm{IC}_{95\%}(RR) = \exp\left(\ln(RR) \pm 1.96\sqrt{\frac{1}{a}-\frac{1}{a+b}+\frac{1}{c}-\frac{1}{c+d}}\right)
+\mathrm{IC}_{95}(RR) = \exp\left(\ln(RR) \pm 1.96\sqrt{\frac{1}{a}-\frac{1}{a+b}+\frac{1}{c}-\frac{1}{c+d}}\right)
 $$
 
 Em ambos os casos, o valor **1** representa ausência de associação na escala relativa. Se um IC95% bilateral incluir 1, não se rejeita a hipótese de associação nula em um teste correspondente ao nível de 5%.
