@@ -3,3 +3,7 @@
 ## Medidas de Associação:
 - ### Estudos de Coorte e Caso-controle 
   **[1) Risco Relativo e Odds-Ratio](RR_OR.md)**
+
+## Comparação entre grupos:
+- ### Testes paramétricos e não paramétricos
+  **[2) Teste t de Student e ANOVA](TESTE_T_ANOVA.md)**
