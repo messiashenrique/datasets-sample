@@ -136,19 +136,13 @@ Os valores apresentados são intervalos **aproximados de Wald, calculados na esc
 Para **OR**:
 
 $$
-\mathrm{IC}_{95\%}(\mathrm{OR}) =
-\exp\left(
-\log(\mathrm{OR}) \pm 1.96\sqrt{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}}
-\right)
+\mathrm{IC}_{95\%}(\mathrm{OR}) = \exp\left(\log(\mathrm{OR}) \pm 1.96\sqrt{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{d}}\right)
 $$
 
 Para **RR**, com `a` e `b` no grupo exposto e `c` e `d` no não exposto (método logarítmico de Katz):
 
 $$
-\mathrm{IC}_{95\%}(RR) =
-\exp\left(
-\ln(RR) \pm 1.96\sqrt{\frac{1}{a}-\frac{1}{a+b}+\frac{1}{c}-\frac{1}{c+d}}
-\right)
+\mathrm{IC}_{95\%}(RR) = \exp\left(\ln(RR) \pm 1.96\sqrt{\frac{1}{a}-\frac{1}{a+b}+\frac{1}{c}-\frac{1}{c+d}}\right)
 $$
 
 Em ambos os casos, o valor **1** representa ausência de associação na escala relativa. Se um IC95% bilateral incluir 1, não se rejeita a hipótese de associação nula em um teste correspondente ao nível de 5%.
